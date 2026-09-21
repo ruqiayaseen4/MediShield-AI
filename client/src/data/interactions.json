@@ -1,0 +1,75 @@
+{
+  "description": "Curated drug interaction pairs sourced from publicly available pharmacology references.",
+  "interactions": [
+    {
+      "drug1": "warfarin",
+      "drug1Aliases": ["coumadin", "jantoven"],
+      "drug2": "aspirin",
+      "drug2Aliases": ["acetylsalicylic acid", "asa", "bayer"],
+      "severity": "severe",
+      "description": "Warfarin and aspirin both affect blood clotting. Taking them together significantly increases the risk of bleeding.",
+      "recommendation": "Do not combine without explicit medical supervision.",
+      "mechanism": "Pharmacodynamic: both drugs inhibit clotting through different mechanisms."
+    },
+    {
+      "drug1": "warfarin",
+      "drug1Aliases": ["coumadin", "jantoven"],
+      "drug2": "ibuprofen",
+      "drug2Aliases": ["advil", "motrin", "nurofen"],
+      "severity": "severe",
+      "description": "NSAIDs like ibuprofen increase the risk of bleeding when taken with warfarin.",
+      "recommendation": "Avoid combination. Use acetaminophen as an alternative pain reliever if approved by your doctor.",
+      "mechanism": "Pharmacodynamic: NSAIDs impair platelet function and damage GI mucosa."
+    },
+    {
+      "drug1": "lisinopril",
+      "drug1Aliases": ["prinivil", "zestril"],
+      "drug2": "potassium",
+      "drug2Aliases": ["potassium chloride", "klor-con", "k-dur"],
+      "severity": "severe",
+      "description": "ACE inhibitors like lisinopril can increase potassium levels. Adding potassium supplements can cause dangerous hyperkalemia.",
+      "recommendation": "Do not take potassium supplements with ACE inhibitors without medical supervision.",
+      "mechanism": "Pharmacodynamic: ACE inhibitors reduce aldosterone secretion, decreasing potassium excretion."
+    },
+    {
+      "drug1": "metformin",
+      "drug1Aliases": ["glucophage", "glumetza", "fortamet"],
+      "drug2": "alcohol",
+      "drug2Aliases": ["ethanol", "drinks"],
+      "severity": "severe",
+      "description": "Alcohol increases the risk of lactic acidosis with metformin.",
+      "recommendation": "Limit or avoid alcohol while taking metformin.",
+      "mechanism": "Pharmacodynamic: alcohol impairs lactate metabolism in the liver."
+    },
+    {
+      "drug1": "alprazolam",
+      "drug1Aliases": ["xanax"],
+      "drug2": "oxycodone",
+      "drug2Aliases": ["oxycontin", "roxicodone"],
+      "severity": "severe",
+      "description": "Combining benzodiazepines with opioids significantly increases risk of fatal respiratory depression.",
+      "recommendation": "Avoid combination when possible. FDA warns against co-prescribing.",
+      "mechanism": "Pharmacodynamic: additive CNS and respiratory depression."
+    },
+    {
+      "drug1": "sildenafil",
+      "drug1Aliases": ["viagra", "revatio"],
+      "drug2": "nitroglycerin",
+      "drug2Aliases": ["nitrostat", "nitro-dur", "nitroglycerine"],
+      "severity": "severe",
+      "description": "Combined use causes a dangerous drop in blood pressure that can be fatal.",
+      "recommendation": "Never take sildenafil with any nitrate medication.",
+      "mechanism": "Pharmacodynamic: both drugs cause vasodilation."
+    },
+    {
+      "drug1": "aspirin",
+      "drug1Aliases": ["acetylsalicylic acid", "asa", "bayer"],
+      "drug2": "ibuprofen",
+      "drug2Aliases": ["advil", "motrin"],
+      "severity": "moderate",
+      "description": "Ibuprofen can reduce the antiplatelet effect of low-dose aspirin.",
+      "recommendation": "Take ibuprofen at least 8 hours before or 30 minutes after low-dose aspirin.",
+      "mechanism": "Pharmacodynamic: ibuprofen competitively blocks aspirin's access to COX-1."
+    }
+  ]
+}

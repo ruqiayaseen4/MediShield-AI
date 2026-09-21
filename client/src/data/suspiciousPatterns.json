@@ -1,0 +1,47 @@
+{
+  "description": "Known suspicious packaging patterns that may indicate counterfeit or substandard medicines.",
+  "patterns": [
+    {
+      "regex": "cures?\\s+(all|cancer|diabetes|aids|hiv)",
+      "indicator": "Unrealistic cure claims",
+      "severity": "high",
+      "explanation": "The packaging makes extraordinary cure claims that are not typical of legitimate pharmaceutical products."
+    },
+    {
+      "regex": "(100%|guaranteed|miracle|wonder)\\s+(cure|remedy|treatment|result)",
+      "indicator": "Exaggerated efficacy claims",
+      "severity": "medium",
+      "explanation": "The packaging uses exaggerated efficacy language uncommon in legitimate pharmaceutical labeling."
+    },
+    {
+      "regex": "no\\s+side\\s+effects?|zero\\s+side\\s+effects?",
+      "indicator": "No side effects claim",
+      "severity": "medium",
+      "explanation": "The packaging claims no side effects. Legitimate medicines are required to list potential side effects."
+    },
+    {
+      "regex": "(fda\\s+approved|fda\\s+certified).*(china|india|unknown|online)",
+      "indicator": "Suspicious regulatory claims",
+      "severity": "high",
+      "explanation": "The packaging makes regulatory approval claims combined with origin indicators that may not align."
+    },
+    {
+      "regex": "(secret|ancient|herbal)\\s+(formula|remedy|secret)",
+      "indicator": "Vague proprietary claims",
+      "severity": "medium",
+      "explanation": "The packaging references secret formulas without listing specific active ingredients."
+    },
+    {
+      "regex": "active\\s*ingredient[s]?:\\s*(unknown|proprietary|blend|formula)",
+      "indicator": "Undisclosed active ingredients",
+      "severity": "high",
+      "explanation": "The active ingredients are listed as unknown. Legitimate pharmaceutical products must disclose active ingredients."
+    },
+    {
+      "regex": "order\\s+(now|today)\\s*!|call\\s+now|limited\\s+(time|offer)",
+      "indicator": "Marketing/urgency language",
+      "severity": "low",
+      "explanation": "The packaging uses marketing urgency language uncommon in legitimate pharmaceutical labeling."
+    }
+  ]
+}

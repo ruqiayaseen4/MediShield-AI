@@ -1,0 +1,84 @@
+{
+  "description": "Curated addiction and dependency risk profiles based on publicly available pharmacology data.",
+  "profiles": [
+    {
+      "medicineName": "oxycodone",
+      "aliases": ["oxycontin", "roxicodone", "percocet", "percodan"],
+      "riskLevel": "high",
+      "drugClass": "Opioid analgesic",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule II (US)",
+      "explanation": "Oxycodone is a potent opioid with high abuse potential. Physical dependence develops with regular use.",
+      "warnings": [
+        "High risk of addiction, abuse, and misuse",
+        "Can cause life-threatening respiratory depression",
+        "Physical dependence develops with prolonged use"
+      ]
+    },
+    {
+      "medicineName": "hydrocodone",
+      "aliases": ["vicodin", "norco", "lortab", "zohydro"],
+      "riskLevel": "high",
+      "drugClass": "Opioid analgesic",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule II (US)",
+      "explanation": "Hydrocodone is a widely prescribed opioid with significant abuse potential.",
+      "warnings": [
+        "High potential for abuse and addiction",
+        "Physical dependence with regular use"
+      ]
+    },
+    {
+      "medicineName": "alprazolam",
+      "aliases": ["xanax"],
+      "riskLevel": "high",
+      "drugClass": "Benzodiazepine",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule IV (US)",
+      "explanation": "Alprazolam has rapid onset and short duration, making it one of the most addictive benzodiazepines.",
+      "warnings": [
+        "One of the most commonly abused benzodiazepines",
+        "Withdrawal can cause seizures — requires medical supervision"
+      ]
+    },
+    {
+      "medicineName": "diazepam",
+      "aliases": ["valium"],
+      "riskLevel": "moderate",
+      "drugClass": "Benzodiazepine",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule IV (US)",
+      "explanation": "Diazepam has longer duration than alprazolam, but physical dependence still develops with regular use.",
+      "warnings": [
+        "Physical dependence with prolonged use",
+        "Dangerous in combination with alcohol or opioids"
+      ]
+    },
+    {
+      "medicineName": "tramadol",
+      "aliases": ["ultram", "conzip"],
+      "riskLevel": "moderate",
+      "drugClass": "Opioid analgesic (atypical)",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule IV (US)",
+      "explanation": "Tramadol can cause dependence and withdrawal. Also has SNRI-like properties.",
+      "warnings": [
+        "Can cause physical dependence despite lower schedule",
+        "Risk of seizures at higher doses"
+      ]
+    },
+    {
+      "medicineName": "gabapentin",
+      "aliases": ["neurontin", "gralise"],
+      "riskLevel": "low",
+      "drugClass": "Gabapentinoid",
+      "dependencyType": "Possible physical dependence",
+      "schedule": "Schedule V / Unscheduled",
+      "explanation": "Gabapentin has emerging evidence of misuse, particularly in combination with opioids.",
+      "warnings": [
+        "Increasing reports of misuse, especially with opioids",
+        "Taper when discontinuing to avoid withdrawal"
+      ]
+    }
+  ]
+}
