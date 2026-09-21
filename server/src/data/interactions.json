@@ -1,0 +1,305 @@
+{
+  "description": "Curated drug interaction pairs sourced from publicly available pharmacology references. This seed data ensures the interaction checker works reliably even when external APIs are unavailable. Each entry is based on well-established pharmacological interactions.",
+  "interactions": [
+    {
+      "drug1": "warfarin",
+      "drug1Aliases": ["coumadin", "jantoven"],
+      "drug2": "aspirin",
+      "drug2Aliases": ["acetylsalicylic acid", "asa", "bayer"],
+      "severity": "severe",
+      "description": "Warfarin and aspirin both affect blood clotting. Taking them together significantly increases the risk of bleeding.",
+      "recommendation": "Do not combine without explicit medical supervision. Your doctor may adjust warfarin dosage if aspirin is medically necessary.",
+      "mechanism": "Pharmacodynamic: both drugs inhibit clotting through different mechanisms (warfarin inhibits vitamin K-dependent clotting factors; aspirin inhibits platelet aggregation)."
+    },
+    {
+      "drug1": "warfarin",
+      "drug1Aliases": ["coumadin", "jantoven"],
+      "drug2": "ibuprofen",
+      "drug2Aliases": ["advil", "motrin", "nurofen"],
+      "severity": "severe",
+      "description": "NSAIDs like ibuprofen increase the risk of bleeding when taken with warfarin.",
+      "recommendation": "Avoid combination. Use acetaminophen as an alternative pain reliever if approved by your doctor.",
+      "mechanism": "Pharmacodynamic: NSAIDs impair platelet function and can damage GI mucosa, increasing bleeding risk on top of warfarin's anticoagulant effect."
+    },
+    {
+      "drug1": "lisinopril",
+      "drug1Aliases": ["prinivil", "zestril"],
+      "drug2": "potassium",
+      "drug2Aliases": ["potassium chloride", "klor-con", "k-dur"],
+      "severity": "severe",
+      "description": "ACE inhibitors like lisinopril can increase potassium levels. Adding potassium supplements can cause dangerous hyperkalemia.",
+      "recommendation": "Do not take potassium supplements with ACE inhibitors without medical supervision and regular blood monitoring.",
+      "mechanism": "Pharmacodynamic: ACE inhibitors reduce aldosterone secretion, decreasing potassium excretion. Exogenous potassium further raises serum levels."
+    },
+    {
+      "drug1": "metformin",
+      "drug1Aliases": ["glucophage", "glumetza", "fortamet"],
+      "drug2": "alcohol",
+      "drug2Aliases": ["ethanol", "drinks"],
+      "severity": "severe",
+      "description": "Alcohol increases the risk of lactic acidosis with metformin, a rare but potentially fatal condition.",
+      "recommendation": "Limit or avoid alcohol while taking metformin. Discuss safe alcohol limits with your healthcare provider.",
+      "mechanism": "Pharmacodynamic: alcohol impairs lactate metabolism in the liver, compounding metformin's effect on lactate production."
+    },
+    {
+      "drug1": "simvastatin",
+      "drug1Aliases": ["zocor"],
+      "drug2": "amiodarone",
+      "drug2Aliases": ["cordarone", "pacerone"],
+      "severity": "severe",
+      "description": "Amiodarone significantly increases simvastatin blood levels, raising the risk of muscle damage (rhabdomyolysis).",
+      "recommendation": "Simvastatin dose should not exceed 20mg daily when taken with amiodarone. Your doctor may switch to a different statin.",
+      "mechanism": "Pharmacokinetic: amiodarone inhibits CYP3A4, the enzyme that metabolizes simvastatin."
+    },
+    {
+      "drug1": "methotrexate",
+      "drug1Aliases": ["trexall", "rasuvo"],
+      "drug2": "ibuprofen",
+      "drug2Aliases": ["advil", "motrin", "nurofen"],
+      "severity": "severe",
+      "description": "NSAIDs reduce the kidney's ability to clear methotrexate, leading to toxic accumulation.",
+      "recommendation": "Avoid NSAIDs with methotrexate, especially at higher doses. Use acetaminophen as an alternative.",
+      "mechanism": "Pharmacokinetic: NSAIDs compete with methotrexate for renal tubular secretion and reduce renal blood flow."
+    },
+    {
+      "drug1": "digoxin",
+      "drug1Aliases": ["lanoxin"],
+      "drug2": "amiodarone",
+      "drug2Aliases": ["cordarone", "pacerone"],
+      "severity": "severe",
+      "description": "Amiodarone increases digoxin blood levels by 70-100%, risking toxicity.",
+      "recommendation": "Digoxin dose should typically be reduced by 50% when amiodarone is started. Close monitoring required.",
+      "mechanism": "Pharmacokinetic: amiodarone inhibits P-glycoprotein and renal clearance of digoxin."
+    },
+    {
+      "drug1": "ciprofloxacin",
+      "drug1Aliases": ["cipro", "ciproxin"],
+      "drug2": "theophylline",
+      "drug2Aliases": ["theo-24", "elixophyllin"],
+      "severity": "severe",
+      "description": "Ciprofloxacin significantly increases theophylline levels, risking seizures and cardiac arrhythmias.",
+      "recommendation": "Reduce theophylline dose and monitor blood levels closely. Consider alternative antibiotics.",
+      "mechanism": "Pharmacokinetic: ciprofloxacin inhibits CYP1A2, which metabolizes theophylline."
+    },
+    {
+      "drug1": "ssri",
+      "drug1Aliases": ["fluoxetine", "sertraline", "paroxetine", "citalopram", "escitalopram", "prozac", "zoloft", "paxil", "celexa", "lexapro"],
+      "drug2": "maoi",
+      "drug2Aliases": ["phenelzine", "tranylcypromine", "selegiline", "nardil", "parnate", "emsam", "linezolid"],
+      "severity": "severe",
+      "description": "Combining SSRIs with MAOIs can cause serotonin syndrome — a potentially life-threatening condition with high fever, seizures, and irregular heartbeat.",
+      "recommendation": "Never combine SSRIs with MAOIs. Allow at least 14 days between stopping one and starting the other (5 weeks for fluoxetine).",
+      "mechanism": "Pharmacodynamic: both drug classes increase serotonin. Combined effect causes excessive serotonergic activity."
+    },
+    {
+      "drug1": "lithium",
+      "drug1Aliases": ["lithobid", "eskalith"],
+      "drug2": "ibuprofen",
+      "drug2Aliases": ["advil", "motrin", "nurofen"],
+      "severity": "severe",
+      "description": "NSAIDs increase lithium blood levels by 15-25%, risking lithium toxicity.",
+      "recommendation": "Avoid NSAIDs with lithium. Use acetaminophen for pain relief. If NSAIDs are necessary, lithium dose may need reduction.",
+      "mechanism": "Pharmacokinetic: NSAIDs reduce renal prostaglandin synthesis, decreasing lithium clearance."
+    },
+    {
+      "drug1": "clopidogrel",
+      "drug1Aliases": ["plavix"],
+      "drug2": "omeprazole",
+      "drug2Aliases": ["prilosec", "losec"],
+      "severity": "moderate",
+      "description": "Omeprazole reduces the effectiveness of clopidogrel by inhibiting its activation.",
+      "recommendation": "Consider switching to pantoprazole, which has less interaction. Discuss with your cardiologist.",
+      "mechanism": "Pharmacokinetic: omeprazole inhibits CYP2C19, which converts clopidogrel to its active form."
+    },
+    {
+      "drug1": "metoprolol",
+      "drug1Aliases": ["lopressor", "toprol-xl"],
+      "drug2": "verapamil",
+      "drug2Aliases": ["calan", "verelan"],
+      "severity": "severe",
+      "description": "Both drugs slow heart rate and conduction. Combined use risks severe bradycardia and heart block.",
+      "recommendation": "This combination requires careful medical supervision and ECG monitoring.",
+      "mechanism": "Pharmacodynamic: additive negative chronotropic and dromotropic effects on the heart."
+    },
+    {
+      "drug1": "sildenafil",
+      "drug1Aliases": ["viagra", "revatio"],
+      "drug2": "nitroglycerin",
+      "drug2Aliases": ["nitrostat", "nitro-dur", "nitroglycerine", "glyceryl trinitrate"],
+      "severity": "severe",
+      "description": "Combined use causes a dangerous drop in blood pressure that can be fatal.",
+      "recommendation": "Never take sildenafil with any nitrate medication. Wait at least 24 hours (48 for tadalafil) after sildenafil before using nitrates.",
+      "mechanism": "Pharmacodynamic: both drugs cause vasodilation. Combined effect produces excessive blood pressure reduction."
+    },
+    {
+      "drug1": "phenytoin",
+      "drug1Aliases": ["dilantin"],
+      "drug2": "warfarin",
+      "drug2Aliases": ["coumadin", "jantoven"],
+      "severity": "moderate",
+      "description": "Phenytoin can both increase and decrease warfarin effect unpredictably.",
+      "recommendation": "Close INR monitoring required when these drugs are used together. Frequent dose adjustments may be needed.",
+      "mechanism": "Complex: phenytoin induces CYP enzymes (reducing warfarin) but also displaces warfarin from protein binding (increasing effect)."
+    },
+    {
+      "drug1": "fluoxetine",
+      "drug1Aliases": ["prozac", "sarafem"],
+      "drug2": "tramadol",
+      "drug2Aliases": ["ultram", "conzip"],
+      "severity": "severe",
+      "description": "Combined use increases serotonin syndrome risk. Fluoxetine also increases tramadol levels.",
+      "recommendation": "Avoid combination if possible. If necessary, use lowest effective doses and monitor for serotonin syndrome symptoms.",
+      "mechanism": "Pharmacodynamic: both increase serotonin. Pharmacokinetic: fluoxetine inhibits CYP2D6, increasing tramadol levels."
+    },
+    {
+      "drug1": "carbamazepine",
+      "drug1Aliases": ["tegretol", "carbatrol"],
+      "drug2": "erythromycin",
+      "drug2Aliases": ["e-mycin", "ery-tab"],
+      "severity": "severe",
+      "description": "Erythromycin dramatically increases carbamazepine levels, causing toxicity (dizziness, ataxia, nausea).",
+      "recommendation": "Avoid combination. Use azithromycin as an alternative antibiotic if appropriate.",
+      "mechanism": "Pharmacokinetic: erythromycin inhibits CYP3A4, which metabolizes carbamazepine."
+    },
+    {
+      "drug1": "spironolactone",
+      "drug1Aliases": ["aldactone"],
+      "drug2": "lisinopril",
+      "drug2Aliases": ["prinivil", "zestril"],
+      "severity": "moderate",
+      "description": "Both drugs raise potassium levels. Combined use increases hyperkalemia risk.",
+      "recommendation": "Regular potassium monitoring required. Potassium levels should be checked within 1-2 weeks of starting combination.",
+      "mechanism": "Pharmacodynamic: spironolactone blocks aldosterone; ACE inhibitors reduce aldosterone production. Both decrease potassium excretion."
+    },
+    {
+      "drug1": "amoxicillin",
+      "drug1Aliases": ["amoxil", "moxatag"],
+      "drug2": "methotrexate",
+      "drug2Aliases": ["trexall", "rasuvo"],
+      "severity": "moderate",
+      "description": "Amoxicillin can increase methotrexate levels by reducing renal clearance.",
+      "recommendation": "Monitor for methotrexate toxicity. Complete blood count should be checked.",
+      "mechanism": "Pharmacokinetic: amoxicillin competes with methotrexate for renal tubular secretion."
+    },
+    {
+      "drug1": "levothyroxine",
+      "drug1Aliases": ["synthroid", "levoxyl", "euthyrox"],
+      "drug2": "calcium",
+      "drug2Aliases": ["calcium carbonate", "tums", "caltrate"],
+      "severity": "moderate",
+      "description": "Calcium reduces the absorption of levothyroxine, making it less effective.",
+      "recommendation": "Take levothyroxine and calcium at least 4 hours apart.",
+      "mechanism": "Pharmacokinetic: calcium binds to levothyroxine in the GI tract, reducing absorption."
+    },
+    {
+      "drug1": "levothyroxine",
+      "drug1Aliases": ["synthroid", "levoxyl", "euthyrox"],
+      "drug2": "iron",
+      "drug2Aliases": ["ferrous sulfate", "ferrous gluconate", "iron supplement"],
+      "severity": "moderate",
+      "description": "Iron reduces the absorption of levothyroxine.",
+      "recommendation": "Take levothyroxine and iron supplements at least 4 hours apart.",
+      "mechanism": "Pharmacokinetic: iron forms insoluble complexes with levothyroxine in the GI tract."
+    },
+    {
+      "drug1": "gabapentin",
+      "drug1Aliases": ["neurontin", "gralise"],
+      "drug2": "oxycodone",
+      "drug2Aliases": ["oxycontin", "roxicodone"],
+      "severity": "moderate",
+      "description": "Combined use increases the risk of respiratory depression and sedation.",
+      "recommendation": "Use with caution. Lower doses of either drug may be needed. Monitor for excessive drowsiness and breathing difficulty.",
+      "mechanism": "Pharmacodynamic: additive CNS depressant effects."
+    },
+    {
+      "drug1": "alprazolam",
+      "drug1Aliases": ["xanax"],
+      "drug2": "oxycodone",
+      "drug2Aliases": ["oxycontin", "roxicodone"],
+      "severity": "severe",
+      "description": "Combining benzodiazepines with opioids significantly increases risk of fatal respiratory depression.",
+      "recommendation": "Avoid combination when possible. FDA warns against co-prescribing. If necessary, use lowest doses and shortest duration.",
+      "mechanism": "Pharmacodynamic: additive CNS and respiratory depression."
+    },
+    {
+      "drug1": "diazepam",
+      "drug1Aliases": ["valium"],
+      "drug2": "alcohol",
+      "drug2Aliases": ["ethanol", "drinks"],
+      "severity": "severe",
+      "description": "Alcohol dramatically increases the sedative effects of diazepam, risking respiratory failure.",
+      "recommendation": "Do not drink alcohol while taking diazepam.",
+      "mechanism": "Pharmacodynamic: additive CNS depression through GABA receptor enhancement."
+    },
+    {
+      "drug1": "prednisone",
+      "drug1Aliases": ["deltasone", "rayos"],
+      "drug2": "ibuprofen",
+      "drug2Aliases": ["advil", "motrin"],
+      "severity": "moderate",
+      "description": "Combined use significantly increases the risk of stomach ulcers and GI bleeding.",
+      "recommendation": "Avoid NSAIDs with corticosteroids. If pain relief is needed, use acetaminophen or take with a proton pump inhibitor.",
+      "mechanism": "Pharmacodynamic: both drugs damage GI mucosa through different mechanisms."
+    },
+    {
+      "drug1": "atorvastatin",
+      "drug1Aliases": ["lipitor"],
+      "drug2": "clarithromycin",
+      "drug2Aliases": ["biaxin"],
+      "severity": "moderate",
+      "description": "Clarithromycin increases atorvastatin levels, raising the risk of muscle pain and damage.",
+      "recommendation": "Consider temporarily stopping the statin during antibiotic treatment, or limit atorvastatin to 20mg daily.",
+      "mechanism": "Pharmacokinetic: clarithromycin inhibits CYP3A4, which metabolizes atorvastatin."
+    },
+    {
+      "drug1": "metformin",
+      "drug1Aliases": ["glucophage", "glumetza"],
+      "drug2": "furosemide",
+      "drug2Aliases": ["lasix"],
+      "severity": "moderate",
+      "description": "Furosemide can increase metformin levels and both drugs can affect kidney function.",
+      "recommendation": "Monitor kidney function and blood sugar closely when used together.",
+      "mechanism": "Pharmacokinetic: furosemide may reduce renal clearance of metformin."
+    },
+    {
+      "drug1": "losartan",
+      "drug1Aliases": ["cozaar"],
+      "drug2": "potassium",
+      "drug2Aliases": ["potassium chloride", "klor-con"],
+      "severity": "severe",
+      "description": "ARBs like losartan increase potassium retention. Adding potassium supplements risks dangerous hyperkalemia.",
+      "recommendation": "Avoid potassium supplements with ARBs unless specifically prescribed with monitoring.",
+      "mechanism": "Pharmacodynamic: ARBs reduce aldosterone secretion, decreasing potassium excretion."
+    },
+    {
+      "drug1": "aspirin",
+      "drug1Aliases": ["acetylsalicylic acid", "asa", "bayer"],
+      "drug2": "ibuprofen",
+      "drug2Aliases": ["advil", "motrin"],
+      "severity": "moderate",
+      "description": "Ibuprofen can reduce the antiplatelet effect of low-dose aspirin, potentially reducing its heart protection.",
+      "recommendation": "Take ibuprofen at least 8 hours before or 30 minutes after low-dose aspirin.",
+      "mechanism": "Pharmacodynamic: ibuprofen competitively blocks aspirin's access to COX-1 on platelets."
+    },
+    {
+      "drug1": "fluconazole",
+      "drug1Aliases": ["diflucan"],
+      "drug2": "warfarin",
+      "drug2Aliases": ["coumadin", "jantoven"],
+      "severity": "severe",
+      "description": "Fluconazole significantly increases warfarin levels, raising bleeding risk.",
+      "recommendation": "INR must be closely monitored. Warfarin dose likely needs reduction.",
+      "mechanism": "Pharmacokinetic: fluconazole inhibits CYP2C9, which metabolizes the more active S-warfarin."
+    },
+    {
+      "drug1": "tamsulosin",
+      "drug1Aliases": ["flomax"],
+      "drug2": "sildenafil",
+      "drug2Aliases": ["viagra"],
+      "severity": "moderate",
+      "description": "Both drugs lower blood pressure. Combined use may cause dizziness and lightheadedness.",
+      "recommendation": "Start sildenafil at the lowest dose. Monitor for hypotension symptoms.",
+      "mechanism": "Pharmacodynamic: additive vasodilation through different mechanisms."
+    }
+  ]
+}

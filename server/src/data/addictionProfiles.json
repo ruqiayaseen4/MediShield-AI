@@ -1,0 +1,232 @@
+{
+  "description": "Curated addiction and dependency risk profiles based on publicly available pharmacology data and controlled substance schedules. These profiles describe known dependency risks and are NOT personalized medical advice.",
+  "profiles": [
+    {
+      "medicineName": "oxycodone",
+      "aliases": ["oxycontin", "roxicodone", "percocet", "percodan"],
+      "riskLevel": "high",
+      "drugClass": "Opioid analgesic",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule II (US)",
+      "explanation": "Oxycodone is a potent opioid with high abuse potential. Physical dependence develops with regular use, and withdrawal symptoms include muscle aches, anxiety, insomnia, and GI distress.",
+      "warnings": [
+        "High risk of addiction, abuse, and misuse",
+        "Can cause life-threatening respiratory depression",
+        "Physical dependence develops with prolonged use",
+        "Sudden discontinuation causes withdrawal syndrome",
+        "Do not stop abruptly — requires medical tapering"
+      ]
+    },
+    {
+      "medicineName": "hydrocodone",
+      "aliases": ["vicodin", "norco", "lortab", "zohydro"],
+      "riskLevel": "high",
+      "drugClass": "Opioid analgesic",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule II (US)",
+      "explanation": "Hydrocodone is a widely prescribed opioid with significant abuse potential. One of the most commonly abused prescription medications.",
+      "warnings": [
+        "High potential for abuse and addiction",
+        "Physical dependence with regular use",
+        "Risk of fatal overdose, especially with alcohol or benzodiazepines",
+        "Withdrawal symptoms upon discontinuation"
+      ]
+    },
+    {
+      "medicineName": "fentanyl",
+      "aliases": ["duragesic", "sublimaze", "actiq"],
+      "riskLevel": "high",
+      "drugClass": "Opioid analgesic",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule II (US)",
+      "explanation": "Fentanyl is an extremely potent synthetic opioid (50-100x morphine). Very high risk of respiratory depression and death.",
+      "warnings": [
+        "Extremely potent — small dosing errors can be fatal",
+        "High abuse and addiction potential",
+        "Transdermal patches contain lethal doses if misused",
+        "Never use in opioid-naive patients"
+      ]
+    },
+    {
+      "medicineName": "morphine",
+      "aliases": ["ms contin", "morphabond", "kadian"],
+      "riskLevel": "high",
+      "drugClass": "Opioid analgesic",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule II (US)",
+      "explanation": "Morphine is the prototypical opioid with well-known dependence potential. Used as the standard for comparing opioid potency.",
+      "warnings": [
+        "Classic opioid with high addiction potential",
+        "Tolerance develops, requiring dose escalation",
+        "Physical dependence with withdrawal syndrome",
+        "Risk of fatal respiratory depression"
+      ]
+    },
+    {
+      "medicineName": "alprazolam",
+      "aliases": ["xanax"],
+      "riskLevel": "high",
+      "drugClass": "Benzodiazepine",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule IV (US)",
+      "explanation": "Alprazolam has rapid onset and short duration, making it one of the most addictive benzodiazepines. Withdrawal can be dangerous and life-threatening.",
+      "warnings": [
+        "One of the most commonly abused benzodiazepines",
+        "Withdrawal can cause seizures — requires medical supervision",
+        "Physical dependence can develop within weeks",
+        "Never stop abruptly — taper under medical guidance",
+        "Extremely dangerous combined with alcohol or opioids"
+      ]
+    },
+    {
+      "medicineName": "diazepam",
+      "aliases": ["valium"],
+      "riskLevel": "moderate",
+      "drugClass": "Benzodiazepine",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule IV (US)",
+      "explanation": "Diazepam has longer duration than alprazolam, somewhat reducing abuse potential, but physical dependence still develops with regular use.",
+      "warnings": [
+        "Physical dependence with prolonged use",
+        "Withdrawal can be prolonged due to long half-life",
+        "Tolerance develops to sedative effects",
+        "Dangerous in combination with alcohol or opioids"
+      ]
+    },
+    {
+      "medicineName": "clonazepam",
+      "aliases": ["klonopin"],
+      "riskLevel": "moderate",
+      "drugClass": "Benzodiazepine",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule IV (US)",
+      "explanation": "Clonazepam is used for seizures and anxiety. While its longer half-life reduces some abuse potential, dependence still develops.",
+      "warnings": [
+        "Physical dependence with regular use",
+        "Withdrawal can cause seizures",
+        "Requires gradual tapering when discontinuing",
+        "Risk of misuse especially in patients with substance use history"
+      ]
+    },
+    {
+      "medicineName": "zolpidem",
+      "aliases": ["ambien", "edluar", "intermezzo"],
+      "riskLevel": "moderate",
+      "drugClass": "Sedative-hypnotic (Z-drug)",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule IV (US)",
+      "explanation": "Zolpidem is a sleep medication that can cause dependence and complex sleep behaviors. Recommended for short-term use only.",
+      "warnings": [
+        "Recommended for short-term use only (7-10 days)",
+        "Can cause complex sleep behaviors (sleep-walking, sleep-driving)",
+        "Dependence and rebound insomnia with prolonged use",
+        "Withdrawal symptoms upon discontinuation"
+      ]
+    },
+    {
+      "medicineName": "methylphenidate",
+      "aliases": ["ritalin", "concerta", "metadate"],
+      "riskLevel": "moderate",
+      "drugClass": "CNS stimulant",
+      "dependencyType": "Psychological dependence, potential for abuse",
+      "schedule": "Schedule II (US)",
+      "explanation": "Methylphenidate is a stimulant used for ADHD. Has abuse potential, especially when taken at higher-than-prescribed doses or via non-oral routes.",
+      "warnings": [
+        "Schedule II — high abuse potential",
+        "Misuse can lead to cardiovascular events",
+        "Psychological dependence possible",
+        "Should not be used in patients with active substance use disorder without careful monitoring"
+      ]
+    },
+    {
+      "medicineName": "amphetamine",
+      "aliases": ["adderall", "vyvanse", "dextroamphetamine", "dexedrine"],
+      "riskLevel": "moderate",
+      "drugClass": "CNS stimulant",
+      "dependencyType": "Psychological dependence, potential for abuse",
+      "schedule": "Schedule II (US)",
+      "explanation": "Amphetamine-based medications are effective for ADHD and narcolepsy but carry significant abuse potential due to their stimulant properties.",
+      "warnings": [
+        "Schedule II — high potential for abuse",
+        "Can cause cardiovascular complications with misuse",
+        "Tolerance may develop, leading to dose escalation",
+        "Psychological dependence with non-medical use"
+      ]
+    },
+    {
+      "medicineName": "tramadol",
+      "aliases": ["ultram", "conzip"],
+      "riskLevel": "moderate",
+      "drugClass": "Opioid analgesic (atypical)",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule IV (US)",
+      "explanation": "Tramadol was initially thought to have low abuse potential, but evidence shows it can cause dependence and withdrawal. Also has SNRI-like properties.",
+      "warnings": [
+        "Can cause physical dependence despite lower schedule",
+        "Withdrawal includes both opioid and SSRI-like symptoms",
+        "Risk of seizures at higher doses",
+        "Abuse potential is under-recognized"
+      ]
+    },
+    {
+      "medicineName": "codeine",
+      "aliases": ["tylenol 3", "tylenol with codeine"],
+      "riskLevel": "moderate",
+      "drugClass": "Opioid analgesic",
+      "dependencyType": "Physical and psychological dependence",
+      "schedule": "Schedule II-V (US, varies by formulation)",
+      "explanation": "Codeine is a weaker opioid but still carries dependence risk, especially with prolonged use or higher doses.",
+      "warnings": [
+        "Lower potency but still opioid-dependent risk",
+        "Commonly found in combination products",
+        "Physical dependence with regular use",
+        "Ultra-rapid metabolizers may experience stronger effects"
+      ]
+    },
+    {
+      "medicineName": "pregabalin",
+      "aliases": ["lyrica"],
+      "riskLevel": "low",
+      "drugClass": "Gabapentinoid",
+      "dependencyType": "Possible physical dependence",
+      "schedule": "Schedule V (US)",
+      "explanation": "Pregabalin has low but recognized abuse potential, particularly in patients with opioid use disorder. Tapering recommended when discontinuing.",
+      "warnings": [
+        "Schedule V — lowest abuse schedule but still present",
+        "Abuse potential higher in patients with substance use history",
+        "Should be tapered when discontinuing",
+        "Can cause euphoria at supra-therapeutic doses"
+      ]
+    },
+    {
+      "medicineName": "gabapentin",
+      "aliases": ["neurontin", "gralise"],
+      "riskLevel": "low",
+      "drugClass": "Gabapentinoid",
+      "dependencyType": "Possible physical dependence",
+      "schedule": "Not federally scheduled (US), but some states regulate",
+      "explanation": "Gabapentin has emerging evidence of misuse, particularly in combination with opioids. Not federally scheduled but increasingly monitored.",
+      "warnings": [
+        "Increasing reports of misuse, especially with opioids",
+        "Can potentiate opioid effects",
+        "Some states now classify as controlled substance",
+        "Taper when discontinuing to avoid withdrawal"
+      ]
+    },
+    {
+      "medicineName": "testosterone",
+      "aliases": ["androgel", "testim", "depotestosterone"],
+      "riskLevel": "moderate",
+      "drugClass": "Anabolic steroid",
+      "dependencyType": "Psychological dependence",
+      "schedule": "Schedule III (US)",
+      "explanation": "Testosterone replacement therapy is legitimate but can cause psychological dependence and abuse for performance enhancement.",
+      "warnings": [
+        "Schedule III controlled substance",
+        "Psychological dependence for performance/body enhancement",
+        "Can suppress natural testosterone production",
+        "Abuse can cause cardiovascular and hepatic damage"
+      ]
+    }
+  ]
+}
