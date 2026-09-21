@@ -247,6 +247,7 @@ function InfoRow({ label, value }: { label: string; value: string }) {
 }
 
 function ScannerAnalysisCard({ result }: { result: AIAnalysisResponse }) {
+  const navigate = useNavigate();
   const statusConfig: Record<AIAnalysisResponse['status'] | 'not_found', {
     icon: typeof CheckCircle2;
     color: string;

@@ -371,6 +371,7 @@ export function MedicineVerification() {
 }
 
 function AnalysisResultCard({ result }: { result: AIAnalysisResponse }) {
+  const navigate = useNavigate();
   const statusConfig: Record<AIAnalysisResponse['status'] | 'not_found', {
     icon: typeof CheckCircle2;
     color: string;
