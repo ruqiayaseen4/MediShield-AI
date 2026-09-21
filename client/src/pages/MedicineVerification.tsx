@@ -371,15 +371,19 @@ export function MedicineVerification() {
 }
 
 function AnalysisResultCard({ result }: { result: AIAnalysisResponse }) {
-  const navigate = useNavigate();
-
-  const statusConfig = {
-    verified: { icon: CheckCircle2, color: 'text-green-600', bg: 'bg-green-50 border-green-200', badge: 'success' as const, label: 'Verified' },
-    suspicious: { icon: AlertTriangle, color: 'text-red-600', bg: 'bg-red-50 border-red-200', badge: 'danger' as const, label: 'Suspicious' },
-    needs_verification: { icon: HelpCircle, color: 'text-amber-600', bg: 'bg-amber-50 border-amber-200', badge: 'warning' as const, label: 'Needs Verification' },
-    invalid_image: { icon: AlertTriangle, color: 'text-purple-600', bg: 'bg-purple-50 border-purple-200', badge: 'warning' as const, label: 'Human / Non-Medicine Image' },
-    non_medicine: { icon: AlertTriangle, color: 'text-purple-600', bg: 'bg-purple-50 border-purple-200', badge: 'warning' as const, label: 'Non-Medicine Image' },
-    not_found: { icon: XCircle, color: 'text-slate-500', bg: 'bg-slate-50 border-slate-200', badge: 'default' as const, label: 'Not Found' },
+  const statusConfig: Record<AIAnalysisResponse['status'] | 'not_found', {
+    icon: typeof CheckCircle2;
+    color: string;
+    bg: string;
+    badge: 'success' | 'danger' | 'warning' | 'default';
+    label: string;
+  }> = {
+    verified: { icon: CheckCircle2, color: 'text-green-600', bg: 'bg-green-50 border-green-200', badge: 'success', label: 'Verified' },
+    suspicious: { icon: AlertTriangle, color: 'text-red-600', bg: 'bg-red-50 border-red-200', badge: 'danger', label: 'Suspicious' },
+    needs_verification: { icon: HelpCircle, color: 'text-amber-600', bg: 'bg-amber-50 border-amber-200', badge: 'warning', label: 'Needs Verification' },
+    invalid_image: { icon: AlertTriangle, color: 'text-purple-600', bg: 'bg-purple-50 border-purple-200', badge: 'warning', label: 'Human / Non-Medicine Image' },
+    non_medicine: { icon: AlertTriangle, color: 'text-purple-600', bg: 'bg-purple-50 border-purple-200', badge: 'warning', label: 'Non-Medicine Image' },
+    not_found: { icon: XCircle, color: 'text-slate-500', bg: 'bg-slate-50 border-slate-200', badge: 'default', label: 'Not Found' },
   };
 
   const cfg = statusConfig[result.status] || statusConfig.not_found;
